@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Robot</title>
+	<script src="snap.svg.js"></script>
+	<style>
+	#svg-canvas {
+		background-color: skyblue;
+	}
+
+	#svg-data-display {
+		background-color: lightgreen;
+
+	}
+	</style>
+</head>
+<body>
+
+	<svg id="svg-canvas" width="400" height="300"></svg>
+	<svg id="svg-data-display"></svg>
+
+<script src="setup.js"></script>
+<script>
+
+
+
+	//###### ROBOT ACTIONS #############
+	/*
+	- Finding a ball
+	- Tracking ball
+	- Eating ball
+	- Avoiding ball
+	- etc... Hmm.
+	*/
+
+	// Move out of safe area
+	function exit() { // To be replaced. 
+		robot.animate({x: 100, y: 100}, 1000);
+	}
+
+
+	//###### RULES OF KNOWLEDGE ##########
+	/*
+	Rules of knowledge
+	- Factual Knowledge
+	- - Ball color
+	- - Food, danger, safe area
+	- Procedural Rules
+	- - How actions will be carried out. 
+	- Conflict Resolution
+	- - e.g. danger ball in front of food ball is resolved first. 
+	*/
+
+
+
+
+	//###### UPDATE AND RUNNING ##########
+	// Need to do timestep things
+	function update_hunger() {
+		robot.attr("hunger", robot.attr("hunger")-1);
+		hunger_data.attr({text: "Hunger: "+robot.attr("hunger")});
+	}
+	function update() {
+		update_hunger();
+		if (robot.attr("hunger") < 90) {
+			exit();
+		}
+	}
+
+	setInterval(update, 1000);
+	// And update cycles. 
+</script>
+
+</body>
+</html>

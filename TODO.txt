@@ -1,0 +1,31 @@
+TODO.txt
+
+Actions:
+- Finding a ball
+- Tracking ball
+- Eating ball
+- Avoiding ball
+- etc... Hmm.
+
+Rules of knowledge
+- Factual Knowledge
+- - Ball color
+- - Food, danger, safe area
+- Procedural Rules
+- - How actions will be carried out. 
+- Conflict Resolution
+- - e.g. danger ball in front of food ball is resolved first. 
+
+
+TODO: 
+Implement sped and movement.
+- Find direction of food ball. 
+- calculate translation in x, y
+- move distance equal to speed times step time. 
+
+
+
+Resources
+
+Animate with snap
+https://webdesign.tutsplus.com/articles/how-to-manipulate-and-animate-svg-with-snapsvg--cms-21323
