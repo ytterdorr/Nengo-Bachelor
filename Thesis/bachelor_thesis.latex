@@ -1,0 +1,23 @@
+% Doing a Bachelor thesis, eh?
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\title{Something about Robots and Emotions}
+\author{Tore Haglund}
+\date{Day Month Year}
+
+\begin{document}              
+\maketitle
+
+\begin{abstract}
+This is where I will write something \emph{engaging} and possibly even funny.
+\end{abstract}
+\tableofcontents
+
+
+
+\end{document}                 % The input file ends with this command.
+
+
