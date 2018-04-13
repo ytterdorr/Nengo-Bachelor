@@ -26,6 +26,11 @@ Implement sped and movement.
 
 
 Resources
+Original Request:
+https://github.com/ctn-waterloo/modelling_ideas/issues/59
+
+Paper:
+http://acs.ist.psu.edu/iccm2016/proceedings/surendran2016iccm.pdf
 
 Animate with snap
 https://webdesign.tutsplus.com/articles/how-to-manipulate-and-animate-svg-with-snapsvg--cms-21323
