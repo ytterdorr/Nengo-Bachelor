@@ -2,6 +2,9 @@
 \documentclass[12pt]{report}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage[style=authoryear]{biblatex}
+\bibliography{referenser}
+
 \graphicspath{ {images/} }
 
 \title{Something about Robots and Emotions}
@@ -15,6 +18,41 @@
 This is where I will write something \emph{engaging} and possibly even funny.
 \end{abstract}
 \tableofcontents
+
+\section{Bakgrund}
+Här ska jag säga något trevligt om robotar, emotioner, beslutsfattande, neuronmodeller... Det blir nog kul :)
+
+\subsection{Emotioner i robotar}
+
+\subsection{Reward Prediction Error?}
+
+\subsection{Nengo}
+
+\section{Frågeställning}
+Kan jag få liknande resultat som artikeln som vi baserar projektet på?
+
+\section{Metod?}
+Borde kanske finnas
+
+I am going to model a small autonomous robot with the neuron-based computation models of Nengo. 
+
+
+\subsection{Simple emotion model}
+
+\subsection{Reward Prediction error}
+
+\subsection{Nengo Implementation}
+
+
+\section{Resultat}
+Mm, hur kommer det att gå egentligen?
+
+
+\section{Diskussion}
+
+%\bibliographystyle{plain}
+
+\section{Källor}
 
 
 
