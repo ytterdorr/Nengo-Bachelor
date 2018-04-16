@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.8)  13 APR 2018 08:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.8)  16 APR 2018 12:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,20 +6,19 @@ entering extended mode
 (./bachelor_thesis.latex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
-\c@chapter=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -372,7 +371,7 @@ B)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count88
+\etb@tempcnta=\count87
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
@@ -400,7 +399,7 @@ Package etexcmds Info: Could not find \expanded.
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count89
+\lrq@indent=\count88
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -412,44 +411,44 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count90
-\c@listtotal=\count91
-\c@listcount=\count92
-\c@liststart=\count93
-\c@liststop=\count94
-\c@citecount=\count95
-\c@citetotal=\count96
-\c@multicitecount=\count97
-\c@multicitetotal=\count98
-\c@instcount=\count99
-\c@maxnames=\count100
-\c@minnames=\count101
-\c@maxitems=\count102
-\c@minitems=\count103
-\c@citecounter=\count104
-\c@savedcitecounter=\count105
-\c@uniquelist=\count106
-\c@uniquename=\count107
-\c@refsection=\count108
-\c@refsegment=\count109
-\c@maxextratitle=\count110
-\c@maxextratitleyear=\count111
-\c@maxextrayear=\count112
-\c@maxextraalpha=\count113
-\c@abbrvpenalty=\count114
-\c@highnamepenalty=\count115
-\c@lownamepenalty=\count116
-\c@maxparens=\count117
-\c@parenlevel=\count118
-\blx@tempcnta=\count119
-\blx@tempcntb=\count120
-\blx@tempcntc=\count121
-\blx@maxsection=\count122
-\blx@maxsegment@0=\count123
-\blx@notetype=\count124
-\blx@parenlevel@text=\count125
-\blx@parenlevel@foot=\count126
-\blx@sectionciteorder@0=\count127
+\c@tabx@nest=\count89
+\c@listtotal=\count90
+\c@listcount=\count91
+\c@liststart=\count92
+\c@liststop=\count93
+\c@citecount=\count94
+\c@citetotal=\count95
+\c@multicitecount=\count96
+\c@multicitetotal=\count97
+\c@instcount=\count98
+\c@maxnames=\count99
+\c@minnames=\count100
+\c@maxitems=\count101
+\c@minitems=\count102
+\c@citecounter=\count103
+\c@savedcitecounter=\count104
+\c@uniquelist=\count105
+\c@uniquename=\count106
+\c@refsection=\count107
+\c@refsegment=\count108
+\c@maxextratitle=\count109
+\c@maxextratitleyear=\count110
+\c@maxextrayear=\count111
+\c@maxextraalpha=\count112
+\c@abbrvpenalty=\count113
+\c@highnamepenalty=\count114
+\c@lownamepenalty=\count115
+\c@maxparens=\count116
+\c@parenlevel=\count117
+\blx@tempcnta=\count118
+\blx@tempcntb=\count119
+\blx@tempcntc=\count120
+\blx@maxsection=\count121
+\blx@maxsegment@0=\count122
+\blx@notetype=\count123
+\blx@parenlevel@text=\count124
+\blx@parenlevel@foot=\count125
+\blx@sectionciteorder@0=\count126
 \labelnumberwidth=\skip43
 \labelalphawidth=\skip44
 \biblabelsep=\skip45
@@ -460,9 +459,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibhang=\skip50
 \blx@bcfin=\read1
 \blx@bcfout=\write3
-\c@mincomprange=\count128
-\c@maxcomprange=\count129
-\c@mincompwidth=\count130
+\c@mincomprange=\count127
+\c@maxcomprange=\count128
+\c@mincompwidth=\count129
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -471,72 +470,72 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count131
-\c@savedafterword=\count132
-\c@annotator=\count133
-\c@savedannotator=\count134
-\c@author=\count135
-\c@savedauthor=\count136
-\c@bookauthor=\count137
-\c@savedbookauthor=\count138
-\c@commentator=\count139
-\c@savedcommentator=\count140
-\c@editor=\count141
-\c@savededitor=\count142
-\c@editora=\count143
-\c@savededitora=\count144
-\c@editorb=\count145
-\c@savededitorb=\count146
-\c@editorc=\count147
-\c@savededitorc=\count148
-\c@foreword=\count149
-\c@savedforeword=\count150
-\c@holder=\count151
-\c@savedholder=\count152
-\c@introduction=\count153
-\c@savedintroduction=\count154
-\c@namea=\count155
-\c@savednamea=\count156
-\c@nameb=\count157
-\c@savednameb=\count158
-\c@namec=\count159
-\c@savednamec=\count160
-\c@translator=\count161
-\c@savedtranslator=\count162
-\c@shortauthor=\count163
-\c@savedshortauthor=\count164
-\c@shorteditor=\count165
-\c@savedshorteditor=\count166
-\c@labelname=\count167
-\c@savedlabelname=\count168
-\c@institution=\count169
-\c@savedinstitution=\count170
-\c@lista=\count171
-\c@savedlista=\count172
-\c@listb=\count173
-\c@savedlistb=\count174
-\c@listc=\count175
-\c@savedlistc=\count176
-\c@listd=\count177
-\c@savedlistd=\count178
-\c@liste=\count179
-\c@savedliste=\count180
-\c@listf=\count181
-\c@savedlistf=\count182
-\c@location=\count183
-\c@savedlocation=\count184
-\c@organization=\count185
-\c@savedorganization=\count186
-\c@origlocation=\count187
-\c@savedoriglocation=\count188
-\c@origpublisher=\count189
-\c@savedorigpublisher=\count190
-\c@publisher=\count191
-\c@savedpublisher=\count192
-\c@language=\count193
-\c@savedlanguage=\count194
-\c@pageref=\count195
-\c@savedpageref=\count196
+\c@afterword=\count130
+\c@savedafterword=\count131
+\c@annotator=\count132
+\c@savedannotator=\count133
+\c@author=\count134
+\c@savedauthor=\count135
+\c@bookauthor=\count136
+\c@savedbookauthor=\count137
+\c@commentator=\count138
+\c@savedcommentator=\count139
+\c@editor=\count140
+\c@savededitor=\count141
+\c@editora=\count142
+\c@savededitora=\count143
+\c@editorb=\count144
+\c@savededitorb=\count145
+\c@editorc=\count146
+\c@savededitorc=\count147
+\c@foreword=\count148
+\c@savedforeword=\count149
+\c@holder=\count150
+\c@savedholder=\count151
+\c@introduction=\count152
+\c@savedintroduction=\count153
+\c@namea=\count154
+\c@savednamea=\count155
+\c@nameb=\count156
+\c@savednameb=\count157
+\c@namec=\count158
+\c@savednamec=\count159
+\c@translator=\count160
+\c@savedtranslator=\count161
+\c@shortauthor=\count162
+\c@savedshortauthor=\count163
+\c@shorteditor=\count164
+\c@savedshorteditor=\count165
+\c@labelname=\count166
+\c@savedlabelname=\count167
+\c@institution=\count168
+\c@savedinstitution=\count169
+\c@lista=\count170
+\c@savedlista=\count171
+\c@listb=\count172
+\c@savedlistb=\count173
+\c@listc=\count174
+\c@savedlistc=\count175
+\c@listd=\count176
+\c@savedlistd=\count177
+\c@liste=\count178
+\c@savedliste=\count179
+\c@listf=\count180
+\c@savedlistf=\count181
+\c@location=\count182
+\c@savedlocation=\count183
+\c@organization=\count184
+\c@savedorganization=\count185
+\c@origlocation=\count186
+\c@savedoriglocation=\count187
+\c@origpublisher=\count188
+\c@savedorigpublisher=\count189
+\c@publisher=\count190
+\c@savedpublisher=\count191
+\c@language=\count192
+\c@savedlanguage=\count193
+\c@pageref=\count194
+\c@savedpageref=\count195
 \shorthandwidth=\skip51
 \shortjournalwidth=\skip52
 \shortserieswidth=\skip53
@@ -554,13 +553,13 @@ Package biblatex Info: ... file 'biblatex_.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex_.def
 File: biblatex_.def 
-\c@textcitecount=\count197
-\c@textcitetotal=\count198
-\c@textcitemaxnames=\count199
-\c@biburlnumpenalty=\count266
-\c@biburlucpenalty=\count267
-\c@biburllcpenalty=\count268
-\c@smartand=\count269
+\c@textcitecount=\count196
+\c@textcitetotal=\count197
+\c@textcitemaxnames=\count198
+\c@biburlnumpenalty=\count199
+\c@biburlucpenalty=\count266
+\c@biburllcpenalty=\count267
+\c@smartand=\count268
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
@@ -572,8 +571,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2016/03/03 v3.3 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count270
-\c@bbx:relatedtotal=\count271
+\c@bbx:relatedcount=\count269
+\c@bbx:relatedtotal=\count270
 ))
 Package biblatex Info: Trying to load citation style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.cbx' found.
@@ -600,8 +599,8 @@ Package biblatex Info: ... file 'english.lbx' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 )
-\@quotelevel=\count272
-\@quotereset=\count273
+\@quotelevel=\count271
+\@quotereset=\count272
 
 (./bachelor_thesis.aux)
 \openout1 = `bachelor_thesis.aux'.
@@ -633,33 +632,33 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 15.
-[1
-
-] [1] (./bachelor_thesis.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 3.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 3.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 3.
-)
+(./bachelor_thesis.toc)
 \tf@toc=\write4
 \openout4 = `bachelor_thesis.toc'.
 
  [1
 
-] [2] (./bachelor_thesis.aux)
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 57.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 57.
+ [2] [3]
+(./bachelor_thesis.aux)
 Package logreq Info: Writing requests to 'bachelor_thesis.run.xml'.
 \openout1 = `bachelor_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 6610 strings out of 493030
- 111883 string characters out of 6136261
- 505626 words of memory out of 5000000
- 10107 multiletter control sequences out of 15000+600000
- 9761 words of font info for 34 fonts, out of 8000000 for 9000
+ 6594 strings out of 493030
+ 111823 string characters out of 6136261
+ 505266 words of memory out of 5000000
+ 10093 multiletter control sequences out of 15000+600000
+ 7581 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,6n,32p,832b,668s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on bachelor_thesis.dvi (4 pages, 5180 bytes).
+Output written on bachelor_thesis.dvi (3 pages, 4328 bytes).

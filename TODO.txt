@@ -18,7 +18,7 @@ Rules of knowledge
 
 
 TODO: 
-Implement sped and movement.
+Implement speed and movement.
 - Find direction of food ball. 
 - calculate translation in x, y
 - move distance equal to speed times step time. 

@@ -1,25 +1,33 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {0.1}Bakgrund}{1}
+\contentsline {section}{\numberline {1}Background}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {0.1.1}Emotioner i robotar}{1}
+\contentsline {subsection}{\numberline {1.1}Emotions in Robots}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {0.1.2}Reward Prediction Error?}{1}
+\contentsline {subsection}{\numberline {1.2}Reward Prediction Error?}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {0.1.3}Nengo}{1}
+\contentsline {subsection}{\numberline {1.3}Nengo}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {0.2}Fr\IeC {\r a}gest\IeC {\"a}llning}{1}
+\contentsline {subsubsection}{\numberline {1.3.1}Neural Engineering Framework}{2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {0.3}Metod?}{2}
+\contentsline {section}{\numberline {2}Fr\IeC {\r a}gest\IeC {\"a}llning}{2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {0.3.1}Simple emotion model}{2}
+\contentsline {section}{\numberline {3}Method?}{2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {0.3.2}Reward Prediction error}{2}
+\contentsline {subsection}{\numberline {3.1}Simulation}{2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {0.3.3}Nengo Implementation}{2}
+\contentsline {subsection}{\numberline {3.2}Emotion Model}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {0.4}Resultat}{2}
+\contentsline {subsection}{\numberline {3.3}Nengo}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {0.5}Diskussion}{2}
+\contentsline {subsection}{\numberline {3.4}Simple emotion model}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {0.6}K\IeC {\"a}llor}{2}
+\contentsline {subsection}{\numberline {3.5}Reward Prediction error}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6}Nengo Implementation}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Resultat}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Diskussion}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}K\IeC {\"a}llor}{3}

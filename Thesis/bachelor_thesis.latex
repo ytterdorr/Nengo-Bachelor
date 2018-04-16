@@ -1,5 +1,5 @@
 % Doing a Bachelor thesis, eh?
-\documentclass[12pt]{report}
+\documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage[style=authoryear]{biblatex}
@@ -19,22 +19,56 @@ This is where I will write something \emph{engaging} and possibly even funny.
 \end{abstract}
 \tableofcontents
 
-\section{Bakgrund}
-Här ska jag säga något trevligt om robotar, emotioner, beslutsfattande, neuronmodeller... Det blir nog kul :)
+\section{Background}
+%Här ska jag säga något trevligt om robotar, emotioner, beslutsfattande, neuronmodeller... Det blir nog kul :)
+This Bachelor's thesis is to a large extent based on a previous Msc Thesis written by (NAME). What I hope to add in this work is to try out the model in a more neurally plausible framework, i.e. using Nengo, a neural modelling tool for cognitive modelling. 
 
-\subsection{Emotioner i robotar}
+\subsection{Emotions in Robots}
+Hudlicka 
 
 \subsection{Reward Prediction Error?}
 
 \subsection{Nengo}
+Eliasmith,
+
+\subsubsection{Neural Engineering Framework}
+Charles H. Anderson 2003
+
+John miller suggests is a "neural compiler" (Eliasmith, p. 41)
+
+Core principles of NEF (Eliasmith, p. 42):
+\begin{enumerate}
+\item Neural representations are defined by the combinations of nonlinear encoding (examplified by neuron tuning curves and neural spiking) and weighted linear decoding (over populations of neurons and over time).
+\item Transformations of neural representations are functions of the variables represented by neural populations. Transformations are determined using an alternately weighted linear decoding. 
+\item Neural dynamics are characterized by considering neural representations as state variables of dynamic systems. Thus, the dynamics of neurobiological systems can be analyzed using control or dynamics systems) theory.
+\end{enumerate}
 
 \section{Frågeställning}
 Kan jag få liknande resultat som artikeln som vi baserar projektet på?
 
-\section{Metod?}
+\section{Method?}
 Borde kanske finnas
 
 I am going to model a small autonomous robot with the neuron-based computation models of Nengo. 
+
+\subsection{Simulation}
+The robot and its environment is simulated using Python and especially the package graphics.py created by (THE PERSON). The simulation contains: 
+\begin{itemize}
+\item A blue circle representing the Robot
+\item Green circles representing Food
+\item Red circles representing Threats
+\item Purple circles representing Safe Zones
+\item Walls
+\end{itemize}
+
+Interacting with the objects in the environment generates events, that affect the emotional state of the robot.  
+
+\subsection{Emotion Model}
+
+
+\subsection{Nengo}
+How will the computation be implemented with Nengo? Some neural clusters and connections between them. 
+I will have to ask Terry about that. 
 
 
 \subsection{Simple emotion model}
@@ -56,6 +90,10 @@ Mm, hur kommer det att gå egentligen?
 
 
 
+
+Frågor: 
+
+Vad ska jag skriva i bakgrund? 
 \end{document}                 % The input file ends with this command.
 
 
