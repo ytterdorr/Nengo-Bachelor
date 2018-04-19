@@ -1,0 +1,76 @@
+We don't have examples of end to end neural models with vision, motor control, cognition. 
+
+Sequencing. 
+But pretty low level. 
+
+
+Starting
+
+Trying to start as simple as possible. 
+
+Main sensory system. 
+
+Step 1
+Set up an environment. 
+can give information about 5 balls in 
+
+"Camera vision". 
+- Keeps track of 5 objects, 
+
+Output motor commands to wheels. 
+
+
+They have something from the course. 
+
+Get started with the 
+
+What are the right structures. 
+Run through the basic tutorials. 
+
+Use nengo to open the forage.py, 
+
+2. Implementing just one of the actions. Like point at the object. 
+
+3. How to sequence. Not by doing a flowchart, but doing one block in a flowchart. Just show that we have the system setup so that we can have the input and the output going to the agent. 
+
+4. Start expanding things out. One of the action sequences. 
+
+5. Implement other ones. Allow it to change goals. 
+
+117-19 stores sensory data
+Doing some kind of 
+
+Connection is allowed to specify a function to be computed on that connection.
+
+(If on left -> turn left, if onright turn right)
+
+Input -> State, 
+State -> Turn
+
+
+
+Academic gain is: Noone has this sort of complex animal behavior end to end in spiking neurons. With vaguely realistic biology. 
+
+Do nothing about vision. 
+
+Getting at least one of those types of actions. Like go find the goal. (Ball)
+
+Might, if can, go find ḿultiple goals. 
+(Stretch, maybe in summer.)
+
+Weekly meetings over that timeframe. 
+
+Emailing quick questions.  
+
+Running through the Nengo Tutorials again.
+
+Building neural model rather than understanding the environment. 
+
+Setting up environment for multiple agents. Terry takes a stab at that. 
+
+End of tutorials goes into how to sequence actions. 
+
+
+
+
+
