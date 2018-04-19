@@ -26,9 +26,13 @@ td, th {
   border: 1px solid darkcyan;
   text-align: left;
   padding: 8px;
-  width: 100px;
+  width: 150px;
 }
 
 tr:nth-child(even) {
   background-color: darkcyan;
+}
+
+tr:nth-child(odd) {
+  background-color: white;
 }

@@ -111,9 +111,30 @@
           <th>Subgoals possible</th>
           <th>Description</th>
         </tr>
+        <!-- Food -->
         <tr>
           <td>Food</td>
-          <td>The robot needs to find a food ball</td>
+          <td>The robot needs to find a
+safe area ball</td>
+          <td>
+            <table>
+            <tr><td>ball_find</td></tr>
+            <tr><td>ball_seek</td></tr>
+            <tr><td>sleep</td></tr>
+            </table>
+          </td>
+          <td>
+            <table>
+              <tr><td>Find objective ball</td></tr>
+              <tr><td>Move toward a found ball</td></tr>
+              <tr><td>Recharge robot health</td></tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Home -->
+        <tr>
+          <td>Home</td>
+          <td>he robot needs to find a safe area ball</td>
           <td>
             <table>
             <tr><td>ball_find</td></tr>
@@ -128,6 +149,30 @@
               <tr><td>Recharge robot health</td></tr>
             </table>
           </td>
+        </tr>
+        <!-- Avoid -->
+        <tr>
+          <td>Avoid</td>
+          <td>The robot needs to avoid a danger ball</td>
+          <td>
+            <table>
+            <tr><td>avoid_ball</td></tr>
+            <tr><td>avoid_wall</td></tr>
+            </table>
+          </td>
+          <td>
+            <table>
+              <tr><td>Avoid a ball obstructing robot</td></tr>
+              <tr><td>Avoid a boundary wall</td></tr>
+            </table>
+          </td>
+        </tr>
+        <!-- None -->
+        <tr>
+          <td>None</td>
+          <td>The robot has no objective</td>
+          <td>Sleep</td>
+          <td>Do nothing</td>
         </tr>
       </table>
       <h3>Interrupts</h3>    
