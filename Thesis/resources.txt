@@ -1,0 +1,2 @@
+Semantic Pointer Architecture
+http://compneuro.uwaterloo.ca/research/spa/semantic-pointer-architecture.html

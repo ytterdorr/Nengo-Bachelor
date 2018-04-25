@@ -1,0 +1,22 @@
+Questions for Terry
+
+In find_object.py, lines 90-91
+    body_speed = nengo.Node(lambda t, x: body.go_forward(x[0]*0.01), size_in=1)
+    body_turn = nengo.Node(lambda t, x: body.turn(x[0]*0.003), size_in=1)
+
+How does it work when you send in a Lambda expression? 
+And what is the role of the t variable? 
+What is t, what is x? Wha
+
+Using Probes
+
+How can I label the output of an ensemble? 
+How can I put relevant labels in the legend?
+
+Where/when is the Update function executed? (Very often it seems)
+
+Where does the Update function return to?
+When is it called?
+
+What is the t argument? 
+
