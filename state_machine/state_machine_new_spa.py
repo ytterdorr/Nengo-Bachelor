@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 d = 32
+"""
 with spa.Network() as model:
     scene = spa.Transcode('BLUE * CIRCLE + RED * SQUARE', output_vocab=d)
     query = spa.Transcode(lambda t: 'CIRCLE' if t < 0.25 else 'SQUARE', output_vocab=d)
@@ -23,8 +24,8 @@ plt.legend(result.vocab, loc="best")
 
 plt.show()
 
-
 """
+
 with spa.Network() as model:
 	stimulus = spa.Transcode('Hello', output_vocab=d)
 	state = spa.State(vocab=d)
@@ -40,4 +41,4 @@ plt.ylabel("Similarity")
 plt.legend(state.vocab, loc="best")
 
 plt.show()
-"""
+""""""
