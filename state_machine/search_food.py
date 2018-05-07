@@ -35,7 +35,8 @@ with model:
     actions = spa.Actions(
         # Start when subgoal is right
         'dot(subgoal, SEARCH_BALL) -->now_state=START',
-        'dot(now_state, START) --> now_state=SEARCH1, subgoal=WAIT',
+        'dot(now_state, START) --> now_state=SEARCH1',
+        'dot(now_state, START) --> subgoal=WAIT',
         'dot(now_state, SEARCH1) --> now_action=TURN',
         'dot(now_action, TURN) --> now_state=WAIT',
         'dot(now_action, TURN) --> now_action=DONE1',
