@@ -1,0 +1,37 @@
+
+
+Friday 4/5
+Nengo 25 min. 
+Leta efter papper. Kolla på avoid wall. Hur gör man random i nengo? hur vrida viss vinkelgrad? Kna nog kolla på tid kanske. 
+
+22.00 - 22.25
+Nengo. Håller på med Search Food-action.
+
+22.50-23.35
+Första versionen av cyklisk search-food action.
+
+23.40 - 00.40
+Mer utforskande av hur man kan göra svängnoden. Hur reglerar man så att noder väntar på varandra? 
+
+Jag kan nog logga 3 timmar idag. 
+
+Saturday 5/5:
+
+## 15.35 - 16.35
+- Went over the exemple code state machine for Avoid wall.
+- Wrote a pseudo-code similar version for Searching Food. 
+- Found a paper on state machines based on spiking neurons.
+
+
+# 17.05 - 17.45?
+TODO:
+- Write Pseudo-code for the other action sequences as well. 
+- Print the article about spiking neuron state machines. 
+
+# 18.11, finished pseudo-code for action sequences. 
+Take a break, by going to university and print the article. 
+
+Then eat.
+
+19.52 Now what?
+practice doing controlled input on spa.State objects.
