@@ -19,7 +19,7 @@ with model:
 	    'dot(now_state, ACTION) --> food_percept=WAITING',
 	    'dot(food, FOOD) --> subgoal=EAT',
 	    'dot(food, FOOD) --> now_state=STOP',
-	    'dot(cortex, EAT) --> subgoal=ACTION',
+	    'dot(subgoal, EAT) --> subgoal=ACTION',
 		)
 
 
