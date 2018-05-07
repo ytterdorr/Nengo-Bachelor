@@ -24,22 +24,28 @@ with model:
     
     
     D = 32
-    step = nengo.Node(0)
+    #step = nengo.Node(0)
     model.food = spa.State(D)
     model.now_state = spa.State(D, feedback=1, feedback_synapse=0.01)
-    
+    model.now_action = spa.State(D, feedback=1, feedback_synapse=0.01)
+    model.subgoal = spa.State(D)
     def update_step():
         pass
         
     actions = spa.Actions(
-        'dot(now_state, START) --> now_state=FOOD_SEARCH1',
-        'dot(now_state, FOOD_SEARCH1) --> now_state=TURN',
-        'dot(now_state, TURN) --> now_state=FOOD_SEARCH2',
-        'dot(now_state, FOOD_SEARCH2) --> now_state=FORWARD',
-        'dot(now_state, FORWARD) --> now_state=FOOD_SEARCH1',
+        # Start when subgoal is right
+        'dot(subgoal, SEARCH_BALL) -->now_state=START',
+        'dot(now_state, START) --> now_state=SEARCH1, subgoal=WAIT',
+        'dot(now_state, SEARCH1) --> now_action=TURN',
+        'dot(now_action, TURN) --> now_state=WAIT',
+        'dot(now_action, TURN) --> now_action=DONE1',
+        'dot(now_action, DONE1) --> now_state=SEARCH2',
+        'dot(now_state, SEARCH2) --> now_action=FORWARD',
+        'dot(now_action, FORWARD) --> now_state=WAIT',
+        'dot(now_action, FORWARD) --> now_action=DONE2',
+        'dot(now_action, DONE2) --> now_state=SEARCH1',
         'dot(food, ISFOOD) --> now_state=STOP',
         )
     
     model.bg = spa.BasalGanglia(actions)
     model.thalamus = spa.Thalamus(model.bg)
-    
