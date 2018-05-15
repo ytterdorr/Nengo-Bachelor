@@ -1,0 +1,61 @@
+Questions Monday 7/5:
+
+- In the cortical tutorial, could you give me a quick explanation of how to reason about adding the pseudo inverse to action rules, e.g. phrase*~NOUN.
+sometimes the whole negative part is also multiplied by 2. 
+
+
+- How to connect the state machine with nodes? SPA modules. 
+
+How to connect this state
+CheckSensor -> Do action1 -> CheckSensor -> Do action2 >
+REPEAT
+
+e.g. Search food ball action
+1. Check if ball close
+2. Turn
+3. CHeck if ball close
+4. move forward. 
+
+
+Related to this I am trying to figure out. 
+
+- How to control that an action runs for a specified time.
+
+Some actions depend on a random variable, e.g. left/right or a number >30. How would you go about implementing that?
+
+Finally, in the model we are basing this on, he uses a lot of "step" variables to keep track of where he is in the execution loops. Many of the schemas can be transformed into basic linear state machines, is that something we should do? Or otherwise, how would you represent the step variable? 
+
+
+
+
+2 śteps
+
+vocab = spa.Vocabulary(dimensions)
+# Make sure the thing I am reading is using that vocabulary. 
+Add it as an argument when creating state object. 
+
+def my_output(t, x):
+	# How similar is x to EAT?
+	eat = np.dot(x, vocab.parse('EAT').v)
+
+	return eat
+
+with model 
+output = neong.Node(my_otput, size_in=dimensions)
+
+nengo.Connection(state.output, output)
+
+
+QUESTIONS 16/5
+
+How do I resolve priority conflict between action rules and input?
+- Maybe add another state in between?
+
+
+We talked about normalizing the dot products. 
+What can be a reason that some dot products have larger amplitude than others? 
+
+
+
+
+

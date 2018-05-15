@@ -33,5 +33,8 @@ Take a break, by going to university and print the article.
 
 Then eat.
 
-19.52 Now what?
+# 19.52 Now what?
 practice doing controlled input on spa.State objects.
+
+TODO: 
+Look up transformations syntax. 
