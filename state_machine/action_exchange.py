@@ -40,12 +40,6 @@ def starter(t):
 	else:
 		return "0"
 
-def return_next(t):
-    if t > 0.4:
-        return vocab.parse("NEXT").v
-    else:
-        return vocab.parse("0").v
-
 with model:
 	# Nodes
 	#action_node = ActionState()
@@ -54,7 +48,7 @@ with model:
 	action_rules = spa.Actions(
 		'dot(action_state, START)*0.6 --> action_state=TURN',
 		#'dot(action_state, DONE)*0.6 --> action_state=FORWARD',
-		'dot(action_state, TURN)*0.6 --> action_state=WAIT',
+		'dot(action_state, NEXT)*0.6 --> action_state=WAIT',
 		#'dot(action_state, WAIT)*0.6 --> action_state=GO',
 		#'dot(action_state, GO)*0.6 --> action_state=DRIVE',
 		#'dot(action_state, DRIVE)*0.6 --> action_state=TURN',
@@ -85,18 +79,28 @@ def check_turn(t, action):
 
 def read_turn(t, value):
 	if value > 0.5:
-		return "WAIT"
+		time.sleep(1)
+		return vocab.parse("TURN_COMPLETE").v
+	else:
+		return vocab.parse("0").v
 		
 def turn_function(t, turn_value):
     if turn_value > 0.95:
         time.sleep(2)
         return "NEXT"
 
+def return_next(t):
+    if t > 0.4:
+        return vocab.parse("NEXT").v
+    else:
+        return vocab.parse("0").v
+
 with model:
 	action_parser = nengo.Node(action_parse, size_in=dimensions)
-	#turn_check = nengo.Node(check_turn, size_in=dimensions)
+	turn_check = nengo.Node(check_turn, size_in=dimensions)
 	#turn_complete = nengo.Node(turn_function, size_in=1)
-	return_next_node = nengo.Node(return_next)
+	#return_next_node = nengo.Node(return_next)
+	read_turn_node = nengo.Node(read_turn, size_in=1)
 	
 	# Input
 	model.action_input = spa.Input(action_state=starter)
@@ -105,7 +109,9 @@ with model:
 
 	# Output
 	nengo.Connection(model.action_state.output, action_parser)
-	nengo.Connection(return_next_node, model.action_state.input)
-	#nengo.Connection(model.action_state.output, turn_check)
+	#nengo.Connection(return_next_node, model.action_state.input)
+	nengo.Connection(turn_check, read_turn_node)
+	nengo.Connection(read_turn_node, model.action_state.input)
+	nengo.Connection(model.action_state.output, turn_check)
 	#nengo.Connection(turn_check, turn_complete)
 

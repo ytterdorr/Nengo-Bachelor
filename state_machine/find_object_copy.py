@@ -80,6 +80,8 @@ class State(nengo.Node):
                 self.n_objects += 1
         return what+where        
 
+
+
 # now we actually build the nengo model.
 model = nengo.Network()
 with model:
