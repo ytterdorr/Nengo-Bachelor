@@ -62,9 +62,9 @@ def angle_diff_exceeded(t, action):
     # Check if in TURN state
     if np.dot(action, turn) > 0.9:
         if abs(get_body_angle2() - turn_start) > 0.8:
-            return vocab.parse("STOP").v
+            return vocab.parse("STOP").v - turn
         else:
-            return vocab.parse("TURN").v
+            return turn
     else:
         return vocab.parse("0").v
 
@@ -101,7 +101,7 @@ with model:
     model.action_state = spa.State(dimensions, vocab=vocab, feedback=1, feedback_synapse=0.01)
     
     actions = spa.Actions(
-        'dot(action_state, START) --> action_state=TURN',
+        'dot(action_state, START)*0.6 --> action_state=TURN',
         #'dot(action_state, TURN) --> action_state=WAIT',
         )
 
