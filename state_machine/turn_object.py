@@ -91,7 +91,7 @@ with model:
     env = grid.GridNode(world)
 
     # Nodes
-    body_turn = nengo.Node(lambda t, x: body.turn(x*0.003), size_in=1)
+    body_turn = nengo.Node(turn_function, size_in=1)
     turn_checker = nengo.Node(check_turn, size_in=dimensions)
     feedback_node = nengo.Node(angle_diff_exceeded, size_in=dimensions)
     
@@ -101,7 +101,7 @@ with model:
     model.action_state = spa.State(dimensions, vocab=vocab, feedback=1, feedback_synapse=0.01)
     
     actions = spa.Actions(
-        'dot(action_state, START)*0.6 --> action_state=TURN',
+        'dot(action_state, START)-dot(action_state, STOP) --> action_state=TURN',
         #'dot(action_state, TURN) --> action_state=WAIT',
         )
 
