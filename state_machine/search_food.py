@@ -89,10 +89,11 @@ with model:
     actions = spa.Actions(
         'dot(action_state, START*0.6) -2*dot(food_percept, FOOD) --> action_state=CHECK1, food_percept=food_state',
         'dot(action_state, CHECK1*0.6) -2*dot(food_percept, FOOD) --> action_state=TURN',
-        'dot(action_state, TURN*0.6) -2*dot(food_percept, FOOD) --> action_state=CHECK2*0.2',
+        'dot(action_state, TURN*0.6) -2*dot(food_percept, FOOD) --> action_state=CHECK2',
         'dot(action_state, CHECK2*0.6) -2*dot(food_percept, FOOD) --> action_state=FORWARD, food_percept=food_state',
-        'dot(action_state, FORWARD*0.6) -2*dot(food_percept, FOOD) --> action_state=CHECK1*0.2',
+        'dot(action_state, FORWARD*0.6) -2*dot(food_percept, FOOD) --> action_state=CHECK1',
         'dot(food_percept, FOOD) --> action_state=STOP, subgoal=SEEK_FOOD',
+        '0.5 --> ',
         )
 
     model.bg = spa.BasalGanglia(actions=actions)
