@@ -36,6 +36,7 @@ world = grid.World(Cell, map=map, directions=4)
 body = grid.ContinuousAgent()
 world.add(body, x=2, y=4, dir=1) 
 world.add(Food(), x=5, y=2)
+#world.add(Food(), x=3, y=6)
 
 D = 32
 vocab = spa.Vocabulary(D)
@@ -109,7 +110,7 @@ with model:
         'dot(action_state, WAIT2*0.6) -2*dot(food_percept, FOOD) --> action_state=FORWARD',
         'dot(action_state, FORWARD*0.6) -2*dot(food_percept, FOOD) --> action_state=CHECK1',
         'dot(food_percept, FOOD) --> action_state=STOP, subgoal=SEEK_FOOD',
-        #'0.5 --> ',
+        #'0.5 --> action_state=START',
         )
 
     model.bg = spa.BasalGanglia(actions=actions)
@@ -135,7 +136,7 @@ with model:
             return 0
 
     def turn_function(t, x):
-        return body.turn(x[0]*x[1]*0.005)
+        return body.turn(x[0]*x[1]*0.01)
 
     # Terry's turn towards function
     def turn_towards(x):
