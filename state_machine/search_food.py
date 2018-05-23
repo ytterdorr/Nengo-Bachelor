@@ -79,13 +79,13 @@ class State(nengo.Node):
 
 
 def food_input(t):
-    if t < 1:
+    if t < 1.5:
         return "NOFOOD"
     else:
         return "FOOD"
 
 def starter(t):
-    if t < 0.1:
+    if t < 0.05:
         return "START"
     else:
         return "0"
@@ -118,11 +118,20 @@ def get_r(sinCosArray):
         return r
     
 def stop_if_r_is_large(sinCosArray):
-    size = get_r(sinCosArray)
-    if size > 0.95:
+    r_size = get_r(sinCosArray)
+    if r_size > 0.9:
         return 1
     else:
         return 0
+
+def translate_food_state(t, food_is_close):
+    food = vocab.parse("FOOD").v
+    nofood = vocab.parse("NOFOOD").v
+    
+    if food_is_close > 0.5:
+        return food
+    else:
+        return nofood
 
 with model:
 
@@ -164,7 +173,7 @@ with model:
     model.thal = spa.Thalamus(model.bg)
 
     ## Inputs and outputs
-    model.food_input = spa.Input(food_state=food_input)
+    #model.food_input = spa.Input(food_state=food_input)
     model.start_input = spa.Input(action_state=starter)
 
     # Turning
@@ -194,3 +203,12 @@ with model:
     forward_node = nengo.Node(forward_function, size_in=1)
     nengo.Connection(model.action_state.output, check_forward_node)
     nengo.Connection(check_forward_node, forward_node)
+
+    # For controlling the food input
+    close_to_food = nengo.Ensemble(n_neurons=50, dimensions=1)
+    food_node = nengo.Node(translate_food_state, size_in=1)
+    for i in range(len(where.ensembles)):
+        nengo.Connection(where.ensembles[i], close_to_food, function=stop_if_r_is_large)
+    nengo.Connection(close_to_food, food_node)
+
+    nengo.Connection(food_node, model.food_state.input)
