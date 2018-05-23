@@ -106,7 +106,7 @@ def check_forward(t, action):
 
 
 def turn_function(t, x):
-    return body.turn(x[0]*x[1]*0.003)
+    return body.turn(x[0]*x[1]*0.005)
 
 def forward_function(t, x):
     return body.go_forward(x*0.01)
@@ -149,10 +149,12 @@ with model:
 
 
     actions = spa.Actions(
-        'dot(action_state, START*0.6) -2*dot(food_percept, FOOD) --> action_state=CHECK1, food_percept=food_state',
-        'dot(action_state, CHECK1*0.6) -2*dot(food_percept, FOOD) --> action_state=TURN',
+        'dot(action_state, START*0.6) -2*dot(food_percept, FOOD) --> action_state=CHECK1',
+        'dot(action_state, CHECK1*0.6) -2*dot(food_percept, FOOD) --> food_percept=food_state, action_state=WAIT1',
+        'dot(action_state, WAIT1*0.6) -2*dot(food_percept, FOOD) --> action_state=TURN',
         'dot(action_state, TURN*0.6) -2*dot(food_percept, FOOD) --> action_state=CHECK2',
-        'dot(action_state, CHECK2*0.6) -2*dot(food_percept, FOOD) --> action_state=FORWARD, food_percept=food_state',
+        'dot(action_state, CHECK2*0.6) -2*dot(food_percept, FOOD) --> food_percept=food_state, action_state=WAIT2',
+        'dot(action_state, WAIT2*0.6) -2*dot(food_percept, FOOD) --> action_state=FORWARD',
         'dot(action_state, FORWARD*0.6) -2*dot(food_percept, FOOD) --> action_state=CHECK1',
         'dot(food_percept, FOOD) --> action_state=STOP, subgoal=SEEK_FOOD',
         '0.5 --> ',
@@ -170,7 +172,7 @@ with model:
     turn_ensemble = nengo.Ensemble(n_neurons=200, dimensions=2)
     turn_node = nengo.Node(turn_function, size_in=2)
 
-        # Now let's implement the simplest possible behaviour: turn towards objects.
+    # Now let's implement the simplest possible behaviour: turn towards objects.
     def turn_towards(x):
         if x[0] < -0.1:
             return 1
