@@ -2,9 +2,11 @@
 \documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{xcolor}
 
 % Bibliograpgy stuff
-\usepackage[style=authoryear]{biblatex}
+\usepackage{cite}
+
 
 \graphicspath{ {images/} }
 
@@ -58,7 +60,15 @@ Vector Symbolic Architecture
 \subsubsection{Biological Plausibility}
 
 Stewart \& Eliasmith 2012 (composition and Biologically Plausible Models)
-Evaluate a few approaches to cognitive modelling, LISA, Blackboard architecture, 
+Evaluate a few approaches to cognitive modelling, LISA, Blackboard architecture, Tensor something, Vector Space Architectures. HRR
+
+There are several aspects to the biological plausibility evaluation. 
+
+
+
+\textbf{\color{red}
+- Explain why the basal ganglia is seen as center of action decision, and thalamus.} 
+
 
 
 
@@ -85,7 +95,7 @@ Leaky Integrate-and-Fire neurons.
 \subsection{Simulation}
 The robot and its environment is simulated using Python and especially the package graphics.py created by (THE PERSON). The simulation contains: 
 \begin{itemize}
-\item A blue circle representing the Robot
+\item A blue triangle representing the Robot
 \item Green circles representing Food
 \item Red circles representing Threats
 \item Purple circles representing Safe Zones
@@ -151,8 +161,9 @@ Frågor:
 \item 
 \end{itemize} 
 
-\bibliography{bachelor_thesis}
+\bibliography{referenser}{}
 \bibliographystyle{plain}
+
 \end{document}                 % The input file ends with this command.
 
 

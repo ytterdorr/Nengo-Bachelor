@@ -1,0 +1,20 @@
+Meeting 16/5
+
+
+Why does the action_state in turn_object.py get stuck on TURN?
+- How to set priorities between input and state?
+
+Does not prioritize between action rules and input. Always picks an action rule. 
+
+How do I store a value at a certain time in an ensemble? And compare it?
+If we want it to stay at a certain state for a longer time, scale the value of the target state. 
+
+
+dot(action, turn) --> action=WAIT*0.1
+
+using the input graph for debugging. 
+
+nengolib is a colleciton of tools. 
+
+Rolling window?
+General thing that will remember information over a period of time. 

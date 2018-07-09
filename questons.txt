@@ -1,3 +1,60 @@
+QUESTIONS 23/5
+Status report. 
+This week there have been a few other school related and other things that I have had to put time into, but I have done some work at least on this project, completing a whole task for the robot (Going to a food ball and stopping) 
+I started out with the "search for food" flowchart, but ended up with something more similar to the "Seeking an objective ball" task. My next steps will be to modify it again to implement the two different actions. 
+https://github.com/ytterdorr/Nengo-Bachelor/blob/master/state_machine/search_food.py
+
+Basically the same state machine as last week: Check, Turn, Check, Forward, Check, ...
+Where check updates the food_percept state and Turn and Forward moves the robot. 
+I added a WAIT state after each check so that the change in food_percept update will complete before a movement action is executed. I still get some problems approximately 50% of the runs where it halts between states, but when it works it works :)
+
+In general, I think I would like to talk a bit more about the perception system in the simulation system, and how I should put limits on that, as many of the actions concern the robot's limited perception. And also perhaps discuss how faithfully I should follow the schemata.
+
+I also have one more question regarding the turn function that you implemented in the find_object example you gave me in the beginning. I am wondering why it gives me a continuous value, and not just values close to 1, 0 or -1 as the return statements would suggest. 
+
+In my current implementation it looks something like this:
+(around lines 130-150 in search_food.py)
+
+	where = nengo.EnsembleArray(...)
+	...
+	turn_ensemble = nengo.Ensemble(...)
+
+    def turn_towards(x):
+        if x[0] < -0.1:
+            return 1
+        elif x[0] > 0.1:
+            return -1
+        else:
+            return 0
+  	...
+
+    # How does this give a contionuous value?
+    for i in range(sensors.n_objects):
+        nengo.Connection(where.ensembles[i], turn_ensemble[1], function=turn_towards) 
+
+I mean, it is useful that I get a continuous value from it, but I don't quite understand why.  
+
+See you soon!
+
+Cheers, 
+
+Tore
+
+
+
+
+
+QUESTIONS 16/5
+
+How do I resolve priority conflict between action rules and input?
+- Maybe add another state in between?
+
+
+We talked about normalizing the dot products. 
+What can be a reason that some dot products have larger amplitude than others? 
+
+________________________
+
 Questions Monday 7/5:
 
 - In the cortical tutorial, could you give me a quick explanation of how to reason about adding the pseudo inverse to action rules, e.g. phrase*~NOUN.
@@ -46,14 +103,10 @@ output = neong.Node(my_otput, size_in=dimensions)
 nengo.Connection(state.output, output)
 
 
-QUESTIONS 16/5
-
-How do I resolve priority conflict between action rules and input?
-- Maybe add another state in between?
 
 
-We talked about normalizing the dot products. 
-What can be a reason that some dot products have larger amplitude than others? 
+
+
 
 
 

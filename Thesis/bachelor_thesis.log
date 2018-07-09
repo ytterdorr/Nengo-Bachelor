@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.8)  16 APR 2018 14:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.8)  4 JUL 2018 14:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**bachelor_thesis.latex
-(./bachelor_thesis.latex
+**bachelor_thesis.tex
+(./bachelor_thesis.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -357,315 +357,75 @@ File: dvips.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2016/03/03 v3.3 programmable bibliographies (PK/JW/AB)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-
-Package biblatex Warning: No "backend" specified, using Biber backend.
-(biblatex)                To use BibTeX, load biblatex with 
-(biblatex)                the "backend=bibtex" option.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex_.sty
-Package: biblatex_ 2016/03/03 v3.3 programmable bibliographies (biber) (PK/JW/A
-B)
-
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count87
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package xcolor Info: Driver file: dvips.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
-Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count88
-
-(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
-File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-))
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip10
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-\c@tabx@nest=\count89
-\c@listtotal=\count90
-\c@listcount=\count91
-\c@liststart=\count92
-\c@liststop=\count93
-\c@citecount=\count94
-\c@citetotal=\count95
-\c@multicitecount=\count96
-\c@multicitetotal=\count97
-\c@instcount=\count98
-\c@maxnames=\count99
-\c@minnames=\count100
-\c@maxitems=\count101
-\c@minitems=\count102
-\c@citecounter=\count103
-\c@savedcitecounter=\count104
-\c@uniquelist=\count105
-\c@uniquename=\count106
-\c@refsection=\count107
-\c@refsegment=\count108
-\c@maxextratitle=\count109
-\c@maxextratitleyear=\count110
-\c@maxextrayear=\count111
-\c@maxextraalpha=\count112
-\c@abbrvpenalty=\count113
-\c@highnamepenalty=\count114
-\c@lownamepenalty=\count115
-\c@maxparens=\count116
-\c@parenlevel=\count117
-\blx@tempcnta=\count118
-\blx@tempcntb=\count119
-\blx@tempcntc=\count120
-\blx@maxsection=\count121
-\blx@maxsegment@0=\count122
-\blx@notetype=\count123
-\blx@parenlevel@text=\count124
-\blx@parenlevel@foot=\count125
-\blx@sectionciteorder@0=\count126
-\labelnumberwidth=\skip43
-\labelalphawidth=\skip44
-\biblabelsep=\skip45
-\bibitemsep=\skip46
-\bibnamesep=\skip47
-\bibinitsep=\skip48
-\bibparsep=\skip49
-\bibhang=\skip50
-\blx@bcfin=\read1
-\blx@bcfout=\write3
-\c@mincomprange=\count127
-\c@maxcomprange=\count128
-\c@mincompwidth=\count129
-Package biblatex Info: Trying to load biblatex default data model...
-Package biblatex Info: ... file 'blx-dm.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def)
-Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'authoryear.dbx' not found.
-Package biblatex Info: Trying to load biblatex custom data model...
-Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count130
-\c@savedafterword=\count131
-\c@annotator=\count132
-\c@savedannotator=\count133
-\c@author=\count134
-\c@savedauthor=\count135
-\c@bookauthor=\count136
-\c@savedbookauthor=\count137
-\c@commentator=\count138
-\c@savedcommentator=\count139
-\c@editor=\count140
-\c@savededitor=\count141
-\c@editora=\count142
-\c@savededitora=\count143
-\c@editorb=\count144
-\c@savededitorb=\count145
-\c@editorc=\count146
-\c@savededitorc=\count147
-\c@foreword=\count148
-\c@savedforeword=\count149
-\c@holder=\count150
-\c@savedholder=\count151
-\c@introduction=\count152
-\c@savedintroduction=\count153
-\c@namea=\count154
-\c@savednamea=\count155
-\c@nameb=\count156
-\c@savednameb=\count157
-\c@namec=\count158
-\c@savednamec=\count159
-\c@translator=\count160
-\c@savedtranslator=\count161
-\c@shortauthor=\count162
-\c@savedshortauthor=\count163
-\c@shorteditor=\count164
-\c@savedshorteditor=\count165
-\c@labelname=\count166
-\c@savedlabelname=\count167
-\c@institution=\count168
-\c@savedinstitution=\count169
-\c@lista=\count170
-\c@savedlista=\count171
-\c@listb=\count172
-\c@savedlistb=\count173
-\c@listc=\count174
-\c@savedlistc=\count175
-\c@listd=\count176
-\c@savedlistd=\count177
-\c@liste=\count178
-\c@savedliste=\count179
-\c@listf=\count180
-\c@savedlistf=\count181
-\c@location=\count182
-\c@savedlocation=\count183
-\c@organization=\count184
-\c@savedorganization=\count185
-\c@origlocation=\count186
-\c@savedoriglocation=\count187
-\c@origpublisher=\count188
-\c@savedorigpublisher=\count189
-\c@publisher=\count190
-\c@savedpublisher=\count191
-\c@language=\count192
-\c@savedlanguage=\count193
-\c@pageref=\count194
-\c@savedpageref=\count195
-\shorthandwidth=\skip51
-\shortjournalwidth=\skip52
-\shortserieswidth=\skip53
-\shorttitlewidth=\skip54
-\shortauthorwidth=\skip55
-\shorteditorwidth=\skip56
-Package biblatex Info: Trying to load compatibility code...
-Package biblatex Info: ... file 'blx-compat.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2016/03/03 v3.3 biblatex compatibility (PK/JW/AB)
-)
-Package biblatex Info: Trying to load generic definitions...
-Package biblatex Info: ... file 'biblatex_.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex_.def
-File: biblatex_.def 
-\c@textcitecount=\count196
-\c@textcitetotal=\count197
-\c@textcitemaxnames=\count198
-\c@biburlnumpenalty=\count199
-\c@biburlucpenalty=\count266
-\c@biburllcpenalty=\count267
-\c@smartand=\count268
-)
-Package biblatex Info: Trying to load bibliography style 'authoryear'...
-Package biblatex Info: ... file 'authoryear.bbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
-File: authoryear.bbx 2016/03/03 v3.3 biblatex bibliography style (PK/JW/AB)
-Package biblatex Info: Trying to load bibliography style 'standard'...
-Package biblatex Info: ... file 'standard.bbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2016/03/03 v3.3 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count269
-\c@bbx:relatedtotal=\count270
-))
-Package biblatex Info: Trying to load citation style 'authoryear'...
-Package biblatex Info: ... file 'authoryear.cbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx
-File: authoryear.cbx 2016/03/03 v3.3 biblatex citation style (PK/JW/AB)
-Package biblatex Info: Redefining '\cite'.
-Package biblatex Info: Redefining '\parencite'.
-Package biblatex Info: Redefining '\footcite'.
-Package biblatex Info: Redefining '\footcitetext'.
-Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\textcite'.
-Package biblatex Info: Redefining '\textcites'.
-)
-Package biblatex Info: Trying to load configuration file...
-Package biblatex Info: ... file 'biblatex.cfg' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
-File: biblatex.cfg 
-)))
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
-)
-\@quotelevel=\count271
-\@quotereset=\count272
-
-(./bachelor_thesis.aux)
+(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+) (./bachelor_thesis.aux)
 \openout1 = `bachelor_thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-Package biblatex Info: Input encoding 'utf8' detected.
-Package biblatex Info: Automatic encoding selection.
-(biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `bachelor_thesis.bcf'.
-
-Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'bachelor_thesis.bbl' not found.
-
-No file bachelor_thesis.bbl.
-Package biblatex Info: Reference section=0 on input line 14.
-Package biblatex Info: Reference segment=0 on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 15.
+(Font)              <14.4> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 15.
+(Font)              <7> on input line 18.
 (./bachelor_thesis.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 5.
+(Font)              <12> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 5.
+(Font)              <8> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 5.
+(Font)              <6> on input line 2.
 )
-\tf@toc=\write4
-\openout4 = `bachelor_thesis.toc'.
+\tf@toc=\write3
+\openout3 = `bachelor_thesis.toc'.
 
  [1
 
 ] [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 57.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 52.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 57.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
  [3] [4]
-(./bachelor_thesis.aux)
-Package logreq Info: Writing requests to 'bachelor_thesis.run.xml'.
-\openout1 = `bachelor_thesis.run.xml'.
-
- ) 
+(./bachelor_thesis.bbl) [5] (./bachelor_thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 6610 strings out of 493030
- 111991 string characters out of 6136261
- 506266 words of memory out of 5000000
- 10103 multiletter control sequences out of 15000+600000
- 9762 words of font info for 34 fonts, out of 8000000 for 9000
+ 1437 strings out of 493030
+ 15977 string characters out of 6136261
+ 76325 words of memory out of 5000000
+ 4994 multiletter control sequences out of 15000+600000
+ 10109 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,6n,32p,832b,668s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 25i,6n,35p,321b,187s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on bachelor_thesis.dvi (4 pages, 7772 bytes).
+Output written on bachelor_thesis.dvi (5 pages, 12532 bytes).
